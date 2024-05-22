@@ -1,4 +1,5 @@
 FROM debian:bookworm-slim
+LABEL org.opencontainers.image.source=https://github.com/chrneumann/mobility-test-data
 
 # Prevent removal of tilemaker examples
 RUN echo path-include /usr/share/doc/tilemaker/examples/* >> /etc/dpkg/dpkg.cfg.d/docker
