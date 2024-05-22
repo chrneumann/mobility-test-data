@@ -15,7 +15,7 @@ Tiles and Styles Copyright:
 
 ```bash
 mkdir data
-docker run -v ./data:/opt/data ghcr.io/chrneumann/mobility-test-data:0.1.1
+docker run --rm -v ./data:/opt/data ghcr.io/chrneumann/mobility-test-data:0.1.1
 ```
 
 ## Alternative: Build the container
@@ -23,5 +23,5 @@ docker run -v ./data:/opt/data ghcr.io/chrneumann/mobility-test-data:0.1.1
 ```bash
 docker build -t mobility-test-data .
 mkdir data
-docker run -v ./data:/opt/data --rm mobility-test-data
+docker run --rm -v ./data:/opt/data --rm mobility-test-data
 ```
